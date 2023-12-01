@@ -12,8 +12,14 @@ const Navbar = () => {
       <ul>
         <li className="brand">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <b>React/ASP.NET JWT Starter</b>
+            <b>Dynamite Books</b>
           </Link>
+        </li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
+        <li>
+          <Link to="/favorites">Favorites</Link>
         </li>
         <li>
           {user ? (

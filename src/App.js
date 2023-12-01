@@ -34,7 +34,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="bookdetails" element={<BookDetailPage />} />
+        <Route path="/bookdetails" element={<BookDetailPage />} />
       </Routes>
       <Footer />
     </div>
