@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={
             <PrivateRoute>
               <HomePage />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/book/:id" element={<BookDetailPage />} />
+        <Route path="/bookdetail/:id" element={<BookDetailPage />} />
       </Routes>
       <Footer />
     </div>

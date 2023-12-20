@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const ReviewDetails = (props) => {
+const ReviewDetails = () => {
   const [review, setReview] = useState(null);
-  const { id } = useParams();
+  const { bookId } = useParams();
 
   const getReviewDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/BookDetail/${id}`
+        `http://localhost:5001/api/Reviews/${bookId}`
       );
       setReview(response.data);
     } catch (error) {
@@ -24,7 +24,7 @@ const ReviewDetails = (props) => {
 
   return review ? (
     <div>
-      <h4>{review.id} Reviews</h4>
+      <h4>Reviews</h4>
 
       <div>
         <span>UserName:</span>
